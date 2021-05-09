@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sindoh Three.js STL Loader</title>
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0px;
+      }
+      #loadButton {
+        height: 35px;
+        width: 100px;
+        position: absolute;
+        top: 5px;
+        left: 82px;
+        background-color: black;
+        color: white;
+        font-size: large;
+      }
+      #viewRefresh {
+        height: 35px;
+        width: 100px;
+        position: absolute;
+        top: 5px;
+        left: 184px;
+        background-color: black;
+        color: white;
+        font-size:small;
+      }
+      #objectRefresh {
+        height: 35px;
+        width: 110px;
+        position: absolute;
+        top: 5px;
+        left: 288px;
+        background-color: black;
+        color: white;
+        font-size:small;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <input id="loadButton" type="file" accept=".stl" style="display:none;" />
+      <input type="button" id="loadButton" value="Load STL" onClick="document.getElementById('loadButton').click();" />
+      <button id="viewRefresh" >View Refresh</button>
+      <button id="objectRefresh" >Object Refresh</button>
+    </div>
+    <script type="module" src="client.js"></script>
+  </body>
+</html>
